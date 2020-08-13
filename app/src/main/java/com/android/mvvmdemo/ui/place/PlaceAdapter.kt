@@ -13,7 +13,7 @@ class PlaceAdapter(private val fragment: Fragment,private val placeList:List<Pla
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val placeName :TextView= view.findViewById(R.id.placeName)
-        val placeAddress:TextView = view.findViewById(R.id.palceAddress)
+        val placeAddress:TextView = view.findViewById(R.id.placeAddress)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaceAdapter.ViewHolder {
