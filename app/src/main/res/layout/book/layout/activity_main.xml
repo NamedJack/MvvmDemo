@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/placeFragment"
-       android:name="com.android.mvvmdemo.ui.weather.PlaceFragment"
+       android:name="com.android.mvvmdemo.ui.place.PlaceFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
