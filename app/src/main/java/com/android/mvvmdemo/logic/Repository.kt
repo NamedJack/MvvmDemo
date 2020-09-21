@@ -3,6 +3,7 @@ package com.android.mvvmdemo.logic
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.liveData
+import com.android.mvvmdemo.logic.dao.PlaceDao
 import com.android.mvvmdemo.logic.model.Places
 import com.android.mvvmdemo.logic.model.Weather
 import com.android.mvvmdemo.logic.network.WeatherNetWork
@@ -15,6 +16,13 @@ import java.lang.RuntimeException
 import kotlin.coroutines.CoroutineContext
 
 object Repository {
+
+
+    fun getSavedPlace()= PlaceDao.getSavedPlace()
+
+    fun savedPlace(places: Places) = PlaceDao.savePlace(places)
+
+    fun isPlaceSaved() = PlaceDao.isPlaceSaved()
 
 
     fun searchPlaces(query: String) = fire(Dispatchers.IO){
